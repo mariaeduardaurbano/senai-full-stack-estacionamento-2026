@@ -1,5 +1,5 @@
-# ESTACIONAMENTO ACME API
-Situação de Aprendizagem - Back-End (Node.JS, JavaSript, VsCode, ORM Prisma, Insomnia)
+# ESTACIONAMENTO ACME WEB
+Situação de Aprendizagem - Full-stack (Node.JS, JavaSript, VsCode, ORM Prisma, Insomnia)
 ## Contextualização
 O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segurança, é nosso cliente e necessita de um sistema Web para registro dos estacionamentos diários.<br>O P.O. após uma visita ao cliente, elaborou o DER e UML DC(Diagrama de Classes) a seguir e elencou os requisitos funcionais.<br>
 ![DER e DC](./docs/der-dc.png)
@@ -44,4 +44,3 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 ## Tecnologias
 
 ## Passo a Passo de como executar e testar
-

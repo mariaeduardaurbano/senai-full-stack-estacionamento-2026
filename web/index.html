@@ -1,11 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estacionamento ACME</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Estadias</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+
+        <a href="index.html">Estadias</a>
+        <a href="veiculos.html">Veículos</a>
+      </aside>
+
+      <div class="content">
+        <header>
+          <h1>Estadias</h1>
+
+          <div class="header-actions">
+            <button onclick="abrirModal('modalEstadia')">
+              + Registrar Entrada
+            </button>
+          </div>
+        </header>
+
+        <main>
+          <table>
+            <thead>
+              <tr>
+                <th>Placa</th>
+                <th>Entrada</th>
+                <th>Saída</th>
+                <th>Valor Total</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="listaEstadias"></tbody>
+          </table>
+        </main>
+      </div>
+    </div>
+
+    <div id="modalEstadia" class="modal">
+      <div class="modal-content">
+        <h2>Nova Estadia</h2>
+
+        <input type="text" id="placaEstadia" placeholder="Placa" />
+        <input type="number" id="valorHora" placeholder="Valor por hora" />
+
+        <div class="modal-buttons">
+          <button onclick="salvarEstadia()">Salvar</button>
+          <button onclick="fecharModal('modalEstadia')">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

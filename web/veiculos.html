@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Cadastro de Veículos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+
+        <a href="index.html">Estadias</a>
+        <a href="veiculos.html">Veículos</a>
+      </aside>
+
+      <div class="content">
+        <header>
+          <h1>Veículos</h1>
+
+          <div class="header-actions">
+            <button onclick="abrirModal('modalVeiculo')">
+              + Novo Veículo
+            </button>
+          </div>
+        </header>
+
+        <main>
+          <table>
+            <thead>
+              <tr>
+                <th>Placa</th>
+                <th>Proprietário</th>
+                <th>Tipo</th>
+                <th>Modelo</th>
+                <th>Marca</th>
+                <th>Cor</th>
+                <th>Ano</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="listaVeiculos"></tbody>
+          </table>
+        </main>
+      </div>
+    </div>
+
+    <div id="modalVeiculo" class="modal">
+      <div class="modal-content">
+        <h2>Novo Veículo</h2>
+
+        <input type="text" id="placa" placeholder="Placa" />
+        <input type="text" id="proprietario" placeholder="Proprietário" />
+
+        <select id="tipo">
+          <option value="">Selecione o tipo</option>
+          <option value="CARRO">Carro</option>
+          <option value="MOTO">Moto</option>
+          <option value="VAN">Van</option>
+          <option value="CAMINHAO">Caminhão</option>
+          <option value="ONIBUS">Ônibus</option>
+        </select>
+
+        <input type="text" id="modelo" placeholder="Modelo" />
+        <input type="text" id="marca" placeholder="Marca" />
+        <input type="text" id="cor" placeholder="Cor (opcional)" />
+        <input type="number" id="ano" placeholder="Ano (opcional)" />
+
+        <div class="modal-buttons">
+          <button onclick="salvarAutomovel()">Salvar</button>
+          <button onclick="fecharModal('modalVeiculo')">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

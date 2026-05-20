@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff5f8;
+    color: #5c2a42;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 200px;
+    background: #8d3b66;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: #ffeaf3;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: #b85c8a;
+}
+
+/* CONTENT */
+
+.content {
+    flex: 1;
+}
+
+/* HEADER */
+
+header {
+    background: #a64d79;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 20px;
+}
+
+/* BUTTON */
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: #d16b98;
+    color: white;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #b85c8a;
+}
+
+/* MAIN */
+
+main {
+    padding: 20px;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #f2d6e2;
+}
+
+th {
+    background: #8d3b66;
+    color: white;
+}
+
+tr:hover {
+    background: #fff0f6;
+}
+
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    width: 320px;
+
+    padding: 20px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-content h2 {
+    color: #8d3b66;
+    text-align: center;
+}
+
+/* INPUTS */
+
+.modal-content input,
+.modal-content select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d9b3c6;
+    outline: none;
+}
+
+.modal-content input:focus,
+.modal-content select:focus {
+    border-color: #b85c8a;
+}
+
+/* MODAL BUTTONS */
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
